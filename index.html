@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    
+    <meta charset="UTF-8">
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>블로그index</title>
+
+    <style>
+       body{
+            background-color: gray;
+
+            font-family: 'Nanum Gothic', serif;
+         }
+         .contatiner{
+            border-radius: 10px;
+            width:960px;
+            height:auto;
+            background-image: url('./image/test1.jpg');
+            background-size:cover;
+         }
+        
+
+        .top_navbar{
+            margin-top: 20px;
+            border : 1px solid black;
+            width : 960px;
+            height : 75px;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .top_navbar img{
+            margin-left :25px;
+            width:50px;
+            height:75px;
+            line-height: 75px;
+            
+        }
+        .top_navbar ul{
+            float : right;
+        }
+        .top_navbar li{
+            float : left;
+            height:75px;
+            line-height: 75px;
+            padding-left: 20px;
+	        padding-right: 20px;
+        }
+        .top_navbar li a{
+            color : black;
+            font-size: 20px;
+	        font-weight: 800;
+            text-decoration : none; /* a에 밑줄 제거 */
+
+        }
+        .top_navbar li a:hover{
+            color : white;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        .index_Main{
+            margin-right:30px;
+            margin-left:30px;
+            margin-top: 50px;
+            width : 900px;
+            height : 320px;
+            background-color: white;
+            border-radius: 10px;
+            /*border : 1px solid black;*/
+
+        }
+
+        .index_Main_Image{
+            float:left;
+        }
+        .index_Main_Image img{
+            height: 320px;
+            width : 480px;
+            border-radius: 10px;
+
+        }
+        .index_Main_Text{
+            float:left;
+        }
+
+
+        .index_Banner{
+            
+            margin-top: 50px;
+            width:960px;
+            height:450px;
+            /*border : 1px solid black;*/
+        }
+        .index_Banner h1{
+            color : black;
+            margin:auto;
+            width:150px;
+            background-color: white;
+            border-radius: 10px;
+            font-weight: bold;
+            height:50px;
+            text-align: center;
+            line-height: 50px;
+        }
+        .index_Banner a:hover h1{
+            color : white;
+            background-color: black;
+        }
+        .left_Banner{
+
+            
+            width:400px;
+            height:450px;
+            float: left;
+            /*border : 1px solid black;*/
+        }
+        .left_Banner img{
+            width:400px;
+            height:400px;
+            border-radius: 70%
+        }
+
+        .right_Banner{
+            
+            width:400px;
+            height:450px;
+            float: right;
+           /*border : 1px solid black;*/
+        }
+        .right_Banner img{
+            width:400px;
+            height:400px;
+            border-radius: 70%
+        }
+
+        .footer_navbar{
+            background-color: white;
+            border-radius: 10px;
+            width:324px;
+            height:100px;
+            border: 1px solid black;
+            margin : 50px auto;
+        }
+        .footer_navbar img{
+           margin : 20px;
+           width : 64px;
+
+        }
+    </style>
+
+    <script>
+        /*
+        자료를 담아두는 그릇, 담기는 그 자료타입을 가짐
+        var : 아래쪽에서 또 선언 가능
+        let : 아래쪽에서 또 선언 불가능
+        const : 상수
+        
+        */
+        let nCount = 0
+        let index_Main_Image = ""
+        let img1 = ""
+
+        window.onload=function(){
+            //이미지 초기화
+            index_Main_Image = document.getElementById("imgAniTest")
+            img1 = document.getElementById("img1")
+
+            setInterval(changeImage, 2000) // setInterval(함수, 시간 1000 = 1sec) 2초마다 진행
+        }
+        function changeImage(){
+            nCount++;
+        //타이머
+            if(nCount >= 6){
+                nCount = 1;
+            }
+            img1.src="./image/"+ nCount + ".jpg"
+        }
+</script>
+</head>
+<body>
+    <div class="contatiner">
+        <div class="top_navbar">
+            
+            <a href="index.html">
+                <img src="./image/home.svg"/>  	
+            </a>	
+            
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+        		<li><a href="register.html">회원가입</a></li>
+            </ul>
+        </div>
+
+        <div class="index_Main">
+            <div class="index_Main_Image" id="index_Main_Image">
+                <img id="img1" src="./image/"/>
+            </div>
+            <div class="index_Main_Text">
+                <h1>일본 맛집 블로그</h1>
+                <ul>
+                    <p>여기는 맛집 블로그 입니다.</p>
+                </ul>
+            </div>
+        </div>
+
+        <div class="index_Banner">
+            <div class="left_Banner">
+                <a href="./main1.html">
+                    <h1>오사카</h1>
+                    <img src="./image/osaka.JPG"/>
+                </a>
+            </div>
+            <div class="right_Banner">     
+                <a href="main2.html">
+                    <h1>도쿄</h1>
+                    <img src="./image/Tokyo.jpg"/>
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="footer_navbar">
+            <a href="https://facebook.com/" ><img src="./image/facebook.svg"/></a>
+            <a href="https://twitter.com/" ><img src="./image/twitter.svg"/></a>
+            <a href="https://www.instagram.com/" ><img src="./image/instagram.svg"/></a>
+        </div>
+
+    
+    </div>
+</body>
+</html>

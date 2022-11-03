@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>도쿄 맛집</title>
+    <style>
+         body{
+            background-color: gray;
+
+            font-family: 'Nanum Gothic', serif;
+         }
+         .contatiner{
+            border-radius: 10px;
+            width:960px;
+            height:auto;
+            background-color: beige;
+         }
+         .top_navbar{
+            margin-top: 20px;
+            border : 1px solid black;
+            width : 960px;
+            height : 75px;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .top_navbar img{
+            margin-left :25px;
+            width:50px;
+            height:75px;
+            line-height: 75px;
+            
+        }
+        .top_navbar ul{
+            float : right;
+        }
+        .top_navbar li{
+            float : left;
+            height:75px;
+            line-height: 75px;
+            padding-left: 20px;
+	        padding-right: 20px;
+        }
+        .top_navbar li a{
+            color : black;
+            font-size: 20px;
+	        font-weight: 800;
+            text-decoration : none; /* a에 밑줄 제거 */
+        }
+        .top_navbar li a:hover{
+            color : white;
+            border-radius: 10px;
+            background-color: black;
+        }
+
+        /*==== 메인 배너 ====*/
+
+        .main_Main{
+            border : 1px solid black; /* 크기 확인용 */
+            border-radius: 10px;
+
+            margin-top:50px;
+            margin-left:30px;
+            margin-right:30px;
+            background-color: white;
+            width:900px;
+            height:300px;
+        }
+        .main_Main h1{
+            float:right;
+            margin-right:50px;
+            margin-top:200px;
+        }
+       
+        .Main_img img{
+            margin-top : 25px;
+            margin-left : 230px;
+            float:left;
+            width: 400px;
+            height : 250px;
+        }
+
+
+
+        .main_row{
+           
+
+            margin-top:50px;
+            width:960px;
+            height:740px;
+        }
+
+        .row{
+            
+
+            width:960px;
+            height:350px;
+            margin-bottom: 20px;
+
+        }
+
+        .col{
+            border : 1px solid black; /* 크기 확인용 */
+            border-radius: 10px;
+            background-color: white;
+            display : inline-block;
+            width:250px;
+            height:350px;
+            margin-right : 48px;
+        }
+        .col:first-child{
+            margin-left : 48px;
+        }
+
+        .col_img img{
+            border-radius: 10px;
+            width:250px;
+            height:200px;
+
+        }
+
+
+        .main_footer{
+            margin-top: 20px;
+            width:960px;
+            
+        }
+        .main_footer hr{
+            width: 960px;
+            border : 1px solid black;
+        }
+        .footer_text{
+            
+            float : left;
+        }
+
+        .footer_text li{
+            margin-left : 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .footer_text span{
+            font-weight: bold;
+        }
+        .footer_img{
+            float : right;
+            padding : 5px 0px;
+            width : 170px;
+            height : 50px;
+            line-height: 50px;
+            
+        }
+
+        .footer_img img{
+            margin : 0px 10px;
+            height : 30px;
+            width : 30px;
+            
+        }
+        
+
+    </style>
+</head>
+<body>
+    <div class="contatiner">
+        <div class="top_navbar">
+            
+            <a href="./index.html">
+                <img src="./image/home.svg"/>  	
+            </a>	
+            
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+        		<li><a href="register.html">회원가입</a></li>
+            </ul>
+        </div>
+
+        <div class="main_Main">
+            <div class="Main_img">
+                <img src="./image/tokyomain.jpg"/>
+            </div>
+            <h1>도 쿄 맛 집</h1>
+
+        </div>
+
+        <div class="main_row">
+            <div class="row">
+
+                <div class="col">
+                    <a href="./tokyomap1.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo1.JPG"/>
+                        </div>
+                        <p>츠지한</p>
+                        <p>종류 : 해산물덮밥</p>
+                        <p>평점 : 4.4/5.0</p>
+
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="./tokyomap2.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo2.JPG"/>
+                        </div>
+                        <p>유타카</p>
+                        <p>종류 : 돈까스</p>
+                        <p>평점 : 4.3/5.0</p>
+
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="./tokyomap3.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo3.JPG"/>
+                        </div>
+                        <p>고다이메 하나야마우동</p>
+                        <p>종류 : 우동</p>
+                        <p>평점 : 4.2/5.0</p>
+
+                    </a>
+                </div>
+
+
+                
+            </div>
+
+            <div class="row">
+
+                <div class="col">
+                    <a href="./tokyomap4.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo4.JPG"/>
+                        </div>
+                        <p>후운지</p>
+                        <p>종류 : 일본 라면</p>
+                        <p>평점 : 4.3/5.0</p>
+
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="./tokyomap5.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo5.JPG"/>
+                        </div>
+                        <p>폰타 혼케</p>
+                        <p>종류 : 돈까스</p>
+                        <p>평점 : 4.2/5.0</p>
+
+                    </a>
+                </div>
+
+                <div class="col">
+                    <a href="./tokyomap6.html" 
+                    onclick="window.open(this.href,'_blank','width=620px,height=550px,toolbars=no,scrollbars=no');return false;">
+                        <div class="col_img">
+                            <img src="./image/tokyo6.JPG"/>
+                        </div>
+                        <p>산록원</p>
+                        <p>종류 : 꼬치구이</p>
+                        <p>평점 : 4.4/5.0</p>
+
+                    </a>
+                </div>
+
+                
+            </div>
+
+
+        </div>
+
+        
+        <div class="main_footer">
+            <hr/>
+            <div class="footer_text">
+                <ul>
+                    <li><span>(e-mail)</span> delicious123@abc.com <span>(phone)</span> 010-1234-1234</li>
+                    <li><span>Copyright&copy;2022 맛집블로그 All Right Reserved</span></li>
+                </ul>
+            </div>
+            <div class="footer_img">
+                <a href="https://facebook.com/" ><img src="./image/facebook.svg"/></a>
+                <a href="https://twitter.com/" ><img src="./image/twitter.svg"/></a>
+                <a href="https://www.instagram.com/" ><img src="./image/instagram.svg"/></a>
+            </div>
+
+        </div>
+
+
+    </div>
+</body>
+</html>

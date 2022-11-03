@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>회원가입</title>
+    <style>
+       body{
+            background-color: gray;
+
+            font-family: 'Nanum Gothic', serif;
+         }
+         .contatiner{
+            border-radius: 10px;
+            width:960px;
+            height:auto;
+            background-color: beige;
+         }
+         .top_navbar{
+            margin-top: 20px;
+            border : 1px solid black;
+            width : 960px;
+            height : 75px;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .top_navbar img{
+            margin-left :25px;
+            width:50px;
+            height:75px;
+            line-height: 75px;
+            
+        }
+         /*
+        .top_navbar ul{
+            float : right;
+        }
+        .top_navbar li{
+            float : left;
+            height:75px;
+            line-height: 75px;
+            padding-left: 20px;
+	        padding-right: 20px;
+        }
+        .top_navbar li a{
+            color : black;
+            font-size: 20px;
+	        font-weight: 800;
+            text-decoration : none; 
+        }
+        .top_navbar li a:hover{
+            color : white;
+            border-radius: 10px;
+            background-color: black;
+        }
+        */
+
+        /*=================================*/
+        .register_form{
+            width:960px;
+        }
+        table{
+            
+            border-collapse: collapse;
+            margin : auto;
+        }
+        tr{
+            
+            height:50px;
+            line-height: 50px;
+        }
+
+        td{
+            
+            border-bottom: 1px solid black;
+            font-size : 20px;
+        }
+
+        .form_header{
+            text-align: center;
+            border-top: none;
+            border-left: none;
+            border-right: none;
+        }
+        
+        .form_header h1{
+            margin-top : 10px;
+            margin-bottom : 10px;
+            
+        }
+
+        .title{
+            width : 200px;
+            background-color : gray;
+            color : white;
+            text-align: center;
+        }
+
+        .content{
+            width : 600px;
+            padding-left : 15px;
+            background-color: white;
+        }
+
+        .form_con{
+            width : 200px;
+            height : 26px;
+            font-size : 20px;
+        }
+
+        .form_email{
+            width : 400px;
+            height : 26px;
+            font-size : 20px;
+        }
+
+        .gen{
+            height : 20px;
+            width : 20px;
+        }
+
+        #phone1{
+            height : 26px;
+            font-size : 20px;
+        }
+        #phone2,#phone3{
+            height : 26px;
+            width : 70px; 
+            font-size : 20px;  
+        }
+
+        #addr_btn{
+            height : 26px;
+            font-size : 16px;
+        }
+
+        #addr1{
+            margin-left : 10px;
+            height : 26px;
+            width : 80px;
+            font-size : 20px;
+        }
+
+        #addr2{
+            
+            height : 26px;
+            width : 240px;
+            font-size : 20px;
+        }
+
+        #addr3{
+            height : 26px;
+            width : 400px;
+            font-size : 20px;
+        }
+
+        .submit{
+            text-align: center;
+            border-left: none;
+            border-right: none;
+            border-bottom: none;
+            
+        }
+        #pre{
+            margin-top:12px;
+            float : left;
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #reset{
+            margin-top:12px;
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #submit{
+            margin-top:12px;
+            float:right;
+            width: 100px;
+            height: 36px;
+            font-size: 16px;
+            font-weight: bold;
+            border-radius: 10px;
+            background-color: white;
+        }
+        #pre:hover, #reset:hover, #submit:hover{
+            color : white;
+            background-color: black;
+        }
+
+
+
+
+
+
+
+        /*========= 바 닥 부 분 ==========*/
+        .main_footer{
+            margin-top: 20px;
+            width:960px;
+            
+        }
+        .main_footer hr{
+            width: 960px;
+            border : 1px solid black;
+        }
+        .footer_text{
+            
+            float : left;
+        }
+
+        .footer_text li{
+            margin-left : 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .footer_text span{
+            font-weight: bold;
+        }
+        .footer_img{
+            float : right;
+            padding : 5px 0px;
+            width : 170px;
+            height : 50px;
+            line-height: 50px;
+            
+        }
+
+        .footer_img img{
+            margin : 0px 10px;
+            height : 30px;
+            width : 30px;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="contatiner">
+        <div class="top_navbar">
+            
+            <a href="index.html">
+                <img src="./image/home.svg"/>  	
+            </a>	
+            <!--
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+        		<li><a href="register.html">회원가입</a></li>
+            </ul>
+            -->
+        </div>
+    
+        <form action="" name="register">
+            <div class="register_form">
+                <table border="0">
+                    <tr>
+                        <td colspan="2" class="form_header"><h1>회 원 가 입</h1></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="id">아이디</label></td>
+                        <td class="content"><input class="form_con" type="id" name="id" id="id" required/>
+                            <input type="button" name="id_btn" id="id_btn" value="중복체크"/><span>&nbsp;&nbsp;*필수</span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="password">비밀번호</label></td>
+                        <td class="content"><input class="form_con" type="password" name="password" id="password" required/><span>&nbsp;&nbsp;*필수</span></span></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="pwd">비밀번호 확인</label></td>
+                        <td class="content"><input class="form_con" type="password" name="pwd" id="pwd" required/><span>&nbsp;&nbsp;*필수</span></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="name">이름</label></td>
+                        <td class="content"><input class="form_con" type="text" name="name" id="name" required/><span>&nbsp;&nbsp;*필수</span></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="gender">성별</label></td>
+                        <td class="content"><input class="gen" type="radio" name="gender" value="m"/> 남&nbsp;&nbsp;
+                            <input class="gen" type="radio" name="gender" value="w"/> 여</td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="phone">휴대폰번호</label></td>
+                        <td class="content">
+                            <select name="phone1" id="phone1" >
+                                <option value="p1">010</option>
+                                <option value="p2">02</option>
+                                <option value="p3">051</option>
+                                <option value="p4">053</option>
+                                <option value="p5">055</option>
+                            </select> - 
+                            <input type="text" name="phone2" id="phone2" class="p1" /> - 
+                            <input type="text" name="phone3" id="phone3" class="p1" /><span>&nbsp;&nbsp;*필수</span></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="email">이메일</label></td>
+                        <td class="content"><input class="form_email" type="email" name="email" id="email"/></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="addr">주소</label></td>
+                        <td class="content"><input type="button" name="addr_btn" id="addr_btn" value="우편번호"/>
+                            <input type="text" name="addr1" id="addr1" readonly class="p1" />&nbsp;&nbsp;
+                            <input type="text" name="addr2" id="addr2" class="a1" readonly /></td>
+                    </tr>
+                    <tr>
+                        <td class="title"><label for="id">상세주소</label></td>
+                        <td class="content"><input type="text" name="addr3" id="addr3" class="a1"/></td>
+                    </tr>
+                    <tr>
+                        <td class="submit" colspan="2">
+                            <input type="button" name="pre" id="pre" value=" 이전으로 " onclick="history.back(-1);">
+                            <input type="reset" name="reset" id="reset" value="새로작성"/>
+                            <input type="submit" name="submit" id="submit" value="가입하기"/>&nbsp;&nbsp;&nbsp;
+                          </td>
+                      </tr>
+                </table>
+
+
+
+            </div>
+
+
+        </form>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+        <div class="main_footer">
+            <hr/>
+            <div class="footer_text">
+                <ul>
+                    <li><span>(e-mail)</span> delicious123@abc.com <span>(phone)</span> 010-1234-1234</li>
+                    <li><span>Copyright&copy;2022 맛집블로그 All Right Reserved</span></li>
+                </ul>
+            </div>
+            <div class="footer_img">
+                <a href="https://facebook.com/" ><img src="./image/facebook.svg"/></a>
+                <a href="https://twitter.com/" ><img src="./image/twitter.svg"/></a>
+                <a href="https://www.instagram.com/" ><img src="./image/instagram.svg"/></a>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <link href="./css/basic.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap" rel="stylesheet">
+    <title>로그인</title>
+
+    <style>
+        body{
+            background-color: gray;
+
+            font-family: 'Nanum Gothic', serif;
+         }
+         .contatiner{
+            border-radius: 10px;
+            width:960px;
+            height:auto;
+            background-color: beige;
+         }
+         .top_navbar{
+            margin-top: 20px;
+            border : 1px solid black;
+            width : 960px;
+            height : 75px;
+            background-color: white;
+            border-radius: 10px;
+            
+        }
+        .top_navbar img{
+            margin-left :25px;
+            width:50px;
+            height:75px;
+            line-height: 75px;
+            
+        }
+        /*
+        .top_navbar ul{
+            float : right;
+        }
+        .top_navbar li{
+            float : left;
+            height:75px;
+            line-height: 75px;
+            padding-left: 20px;
+	        padding-right: 20px;
+        }
+        .top_navbar li a{
+            color : black;
+            font-size: 20px;
+	        font-weight: 800;
+            text-decoration : none; 
+        }
+        .top_navbar li a:hover{
+            color : white;
+            border-radius: 10px;
+            background-color: black;
+        }
+        */
+
+        /*========= 로그인 부분 ================*/
+
+        .login_Main{
+            width : 960px;
+            height : 500px;
+            
+        }
+        .login_Main h1{
+            text-align: center;
+            margin-top : 45px;
+            margin-bottom : 45px;
+            
+        }
+        .login_box{
+            border : 1px solid black;
+            border-radius: 10px;
+            margin : auto;
+            width : 600px;
+            height : 250px;
+            background-color: rgb(180, 176, 176);
+        }
+        .login_box li{
+            text-align: center;
+            margin-bottom:35px;
+
+        }
+        .login_box li:first-child{
+            margin-top:35px;
+        }
+        .input_text{
+            width:300px;
+            height : 50px;
+            font-size : 20px;
+            border : 2px solid black;
+            border-radius: 10px;
+        }
+
+        .login_menu{
+            text-align: center;
+        }
+
+        .menu_text p{
+            
+            font-weight: bold;
+            margin-top : 15px;
+            font-size: 20px;
+        }
+        .menu_text a:hover{
+            color:navy;
+            text-decoration: underline;
+            
+            
+            
+        }
+       
+
+        .menu_btn button,input{
+            width:120px;
+            height: 40px;
+            margin : 10px;
+            border-radius: 10px;
+            font-weight: bold;
+            font-size : 15px;
+        }
+
+        .menu_btn button:hover{
+            background-color : black;
+            color:white;
+        }
+
+        .menu_btn input:hover{
+            background-color : black;
+            color:white;
+        }
+       
+
+        /*========= 바 닥 부 분 ==========*/
+        .main_footer{
+            margin-top: 20px;
+            width:960px;
+            
+        }
+        .main_footer hr{
+            width: 960px;
+            border : 1px solid black;
+        }
+        .footer_text{
+            
+            float : left;
+        }
+
+        .footer_text li{
+            margin-left : 10px;
+            height: 20px;
+            line-height: 20px;
+        }
+        .footer_text span{
+            font-weight: bold;
+        }
+        .footer_img{
+            float : right;
+            padding : 5px 0px;
+            width : 170px;
+            height : 50px;
+            line-height: 50px;
+            
+        }
+
+        .footer_img img{
+            margin : 0px 10px;
+            height : 30px;
+            width : 30px;
+            
+        }
+
+
+
+
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="contatiner">
+        <div class="top_navbar">
+            
+            <a href="index.html">
+                <img src="./image/home.svg"/>  	
+            </a>	
+            <!--
+            <ul>
+                <li><a href="login.html">로그인</a></li>
+        		<li><a href="register.html">회원가입</a></li>
+            </ul>
+            -->
+        </div>
+
+        <div class="login_Main">
+            <form action="" method="post" name="member" id="member">
+                <h1>로 그 인</h1>
+                <div class="login_box">
+                    <ul>
+                        <li><input type="text" name="user_id" id="user_id" class="input_text" required placeholder="  로 그 인"></li>
+                        <li><input type="pwd" name="password" id="password" class="input_text" required placeholder="  비 밀 번 호"></li>
+                    </ul>
+                </div>
+                <div class="login_menu">
+                    <div class="menu_text">
+                        <a href="#"><p>아이디 / 비밀번호찾기</p></a>
+                    </div>
+                    <div class="menu_btn">
+                        <button onclick="location.href='./register.html'">회 원 가 입</button >
+                        <input type="submit" name="submit" id="submit" value="로 그 인">
+                    </div>
+                </div>
+
+            </form>
+
+        </div>
+
+
+        <div class="main_footer">
+            <hr/>
+            <div class="footer_text">
+                <ul>
+                    <li><span>(e-mail)</span> delicious123@abc.com <span>(phone)</span> 010-1234-1234</li>
+                    <li><span>Copyright&copy;2022 맛집블로그 All Right Reserved</span></li>
+                </ul>
+            </div>
+            <div class="footer_img">
+                <a href="https://facebook.com/" ><img src="./image/facebook.svg"/></a>
+                <a href="https://twitter.com/" ><img src="./image/twitter.svg"/></a>
+                <a href="https://www.instagram.com/" ><img src="./image/instagram.svg"/></a>
+            </div>
+
+        </div>
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>
